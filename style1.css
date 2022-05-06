@@ -1,0 +1,43 @@
+.container-1{
+
+    display: grid;
+    /* grid-template-columns: 200px 200px 200px for making 3 colums of size 200px; */
+    /* grid-template-columns: 1fr 1fr 1fr for making 3 boxes having sizes each of ratios 3 fr to full scrreen ; */
+    /* grid-template-columns: repeat(3,1fr); //3 choti 1 fr ko box repeat hunxan */
+    /*  grid-template-columns: repeat(auto-fill,minmax(200px,1fr)); yesle chae screen size anusar screen max boxes ko number haru row and column ma fill up garxw just make the web page having reponsiveness */
+    grid-template-columns: repeat(auto-fill,minmax(200px,1fr));
+    grid-gap: 10px; 
+    /* column-gap: 120px;
+    row-gap: 120px;  dabba haru ko bich mah row and column mah */
+    /* grid-auto-columns:minmax(100px,auto)  ;
+    grid-auto-rows: minmax(50px,auto);     //This helps to make rows and columns having width of 100px or 50 px as min and maximum width as auto  */
+    grid-auto-columns:minmax(100px,auto);
+    grid-auto-rows: minmax(50px,auto);
+}
+.items{
+    background-color: rgb(181, 181, 237);
+    border: 3px rgba(255, 0, 0, 0.854) solid ;
+    border-radius: 3px;
+}
+/* #item-2{
+    grid-row-start: 2;
+    grid-row-end: 3;
+    grid-column-start: 2;
+    grid-column-start: 3; 
+} */
+
+
+#item-1{
+    grid-column-start:1 ;
+    grid-column-end: 5;
+}
+.item-1-container{
+    display: grid;
+    grid-template-columns:repeat(3,1fr) ;
+}
+
+.nested-item{
+    border: 10px rgb(9, 1, 247) solid ;
+    padding: 1px 1px 1px ;
+    background-color: lime;
+}
